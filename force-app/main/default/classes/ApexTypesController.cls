@@ -1,4 +1,6 @@
 public with sharing class ApexTypesController {
+    // check this out.. the CustomWrapper is a class that is used to take the incoming parameterObject and reference the values in the object.
+    // this is used to make the parameterObject (now 'wrapper') available to the apex class.
     @AuraEnabled(cacheable=true)
     public static String checkApexTypes(CustomWrapper wrapper) {
         // Using System.debug() isn't good practice for production applications.
